@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/graphics_frameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/graphics_glsurfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </android.opengl.GLSurfaceView>
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.2"
+        android:background="#ffffff"
+        android:contentDescription="bla" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:alpha="1"
+            android:gravity="center"
+            android:contentDescription=""
+            android:background="@drawable/logo2"/>
+
+        <TextView
+            android:id="@+id/button_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:alpha="1"
+            android:clickable="true"
+            android:text="Resume"
+            android:textColor="#ffff00"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:alpha="1"
+            android:clickable="true"
+            android:text="Start"
+            android:textColor="#ff9900"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/button_dif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:alpha="1"
+            android:clickable="true"
+            android:text="Hard"
+            android:textColor="#ff0000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/button_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:alpha="1"
+            android:clickable="true"
+            android:text="Music On"
+            android:textColor="#00ff00"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/button_tales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:alpha="1"
+            android:clickable="true"
+            android:text="Tales of Triangle"
+            android:textColor="#2222ff"
+            android:textSize="30dp" />
+        
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+ 
+			<TextView
+	            android:id="@+id/button_score"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="40dp"
+	            android:alpha="1"
+	            android:clickable="false"
+	            android:text="Highscore"
+	            android:textColor="#aaaaaa"
+	            android:textSize="24dp" />
+
+			<ProgressBar
+			    android:id="@+id/processBar"
+			    style="?android:attr/progressBarStyleLarge"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+			    android:visibility="gone" />
+    
+    		<ListView android:layout_width="fill_parent"   
+      			android:layout_height="fill_parent"   
+     			android:id="@+id/scoreListView"
+     			android:dividerHeight="0dp">  
+    		</ListView>  
+      
+		</LinearLayout>  
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_stats_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Score: "
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView_stats_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/textView_stats_score"
+            android:text="0"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView_stats_lifes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="0"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView_stats_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView_stats_lifes"
+            android:text="Life: "
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

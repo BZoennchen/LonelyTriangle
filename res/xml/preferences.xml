@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory 
+        android:title="test"
+        android:key="test">
+        
+        <CheckBoxPreference 
+            android:key="musicOn"
+            android:summary="Enable or disable the ingame music"
+            android:title="Enable updates" 
+            android:defaultValue="true"
+        />
+        
+        <ListPreference 
+            android:key="diff"
+            android:title="Start on Difficulty"
+            android:summary="Define on which game mode the game should start"
+            android:defaultValue="0" 
+            android:entries="@array/diff"
+            android:entryValues="@array/diffValues"
+        />    
+            
+    </PreferenceCategory>
+    
+</PreferenceScreen>
